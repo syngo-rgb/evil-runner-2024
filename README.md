@@ -1,18 +1,14 @@
-# Phaser 3 Template
+Notas para los docentes:
 
-Plantilla para iniciar nuevos proyectos con PHASER 3.
+el videojuego es un endless runner vertical en el que el player sólo puede moverse de izquierda a derecha y debe esquivar para sobrevivir. el objetivo es aguantar el mayor tiempo posible. 
+se llama "evil runner" porque la idea es implementar una mecánica en la que transcurrido x tiempo, se alerta al jugador que se van a cambiar la dirección de las teclas, para darle dificultad al juego, luego de transcurrido x tiempo, se vuelve a la modalidad normal.
 
-Contiene configuración inicial y buenas prácticas de estructuras de carpetas.
-
-## Cuando lo utilices
-
-No te olvides de customizarlo a tus necesidades.
-
-1. Cuando lo utilices como Template desde el botón de GitHub, no olvides cambiar el nombre del repositorio acorde a tu proyecto en el wizard de creación de repositorios.
-1. Luego de clonar el repositorio en tu maquina local. Deberias:
-   1. Actualizar la version de Phaser a la version más actualizada en el archivo `index.html`. Ver la web: https://phaser.io/download/stable
-   1. También, dentro del `index.html` modificar el titulo de la pagina. Por ejemplo: `<title>My Game</title>`
-   1. Ejecutar el proyecto de forma local para ver que este funcionando correctamente. Si no es asi, deberias lograr que corra.
-   1. Una vez que este funcionando correctamente, hacer un commit con el mensaje "Update Phaser version and title".
-   1. Borrar los archivos dentro de la carpeta `/assets` y empezar a desarrollar.
-1. Por ultimo, una buena practica es: modificar este README.md, poner información relevante de tu juego, imagenes, videos, etc, y luego hacer un commit con el mensaje "Customize README.md".
+El juego no está completo, falta lo siguiente:
+- ajustar los obstáculos para que aparezcan cada determinado tiempo (timer de obstáculos)
+- hacer que el grupo de obstáculos sean colisionables con el player.
+- crear un evento que cambia la dirección de movimiento, se alerta con un mensaje en pantalla con un contador regresivo (3,2,1), la pantalla deberá tener un filtro rojo con transparencia, después de x tiempo transcurrido, se vuelve a la modalidad normal y continua. 
+- corregir escena de Menú, se ve estirada la imagen.
+- añadir aumento de velocidad a medida que avanza el juego.
+- crear evento gameOver con mensaje en pantalla y vuelva a la pantalla de Menu
+- guardar mejor tiempo (record)
+- ajustar imágenes, arte en general. 
